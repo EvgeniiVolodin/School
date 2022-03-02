@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e99d3cc7cb6d4c13b098fa074f2f70d3" Name="Diagram1">
+        <EntityTypeShape EntityType="PrepodModel.Autorization" Width="1.5" PointX="5.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrepodModel.Curse" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrepodModel.Disciplini" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrepodModel.Raspisanie" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrepodModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrepodModel.Teacher" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrepodModel.TeachersCurses" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="PrepodModel.FK_TeachersCurses_Curse" ManuallyRouted="false" />
+        <AssociationConnector Association="PrepodModel.FK_Raspisanie_Disciplini" ManuallyRouted="false" />
+        <AssociationConnector Association="PrepodModel.FK_Raspisanie_Teacher" ManuallyRouted="false" />
+        <AssociationConnector Association="PrepodModel.FK_TeachersCurses_Teacher" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,32 @@
+﻿<Page x:Class="School.Pages.CreateCurses"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:School.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Создание курса">
+    
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Margin="0,0,10,0">
+                    <TextBlock Text="Название курса:" FontSize="18" Margin="10"/>
+                    <TextBlock Text="Количество часов:" FontSize="18" Margin="10"/>
+                    <TextBlock Text="Дата начала:" FontSize="18" Margin="10"/>
+                    <TextBlock Text="Дата завершения:" FontSize="18" Margin="10"/>
+                    <TextBlock Text="Место проведения:" FontSize="18" Margin="10"/>
+                </StackPanel>
+                <StackPanel>
+                    <TextBox x:Name="CName" Text="{Binding NameCurse}" Width="200" FontSize="17" Margin="10"/>
+                    <TextBox x:Name="CClock" Text="{Binding KolvoHours}" Width="200" FontSize="17" Margin="10"/>
+                    <TextBox x:Name="CStart" Text="{Binding StartDate}" Width="200" FontSize="17" Margin="10"/>
+                    <TextBox x:Name="CEnd" Text="{Binding EndDate}" Width="200" FontSize="17" Margin="10"/>
+                    <TextBox x:Name="CPlace" Text="{Binding Place}" Width="200" FontSize="17" Margin="9"/>
+                </StackPanel>
+            </StackPanel>
+            <Button Content="Сохранить" Height="30" Margin="20" FontSize="16" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

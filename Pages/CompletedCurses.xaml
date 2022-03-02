@@ -1,0 +1,20 @@
+﻿<Page x:Class="School.CompletedCurses"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:School"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Завершённые курсы">
+
+    <Grid>
+        <DataGrid x:Name="DGridCurses" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ФИО Преподавателя" Binding="{Binding Path=Teacher.FIO}" Width="*"/>
+                <DataGridTextColumn Header="Название курса" Binding="{Binding Path=Curse.NameCurse}" Width="*"/>
+                <DataGridCheckBoxColumn Header="Завершён" Binding="{Binding Path=Complete}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>
